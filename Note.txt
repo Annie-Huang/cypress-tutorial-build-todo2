@@ -1,0 +1,83 @@
+Cypress.io youtube channel:
+Playlist: Testing a React Todo App.
+
+https://www.youtube.com/channel/UC-EOsTo2l2x39e4JmSaWNRQ
+https://www.youtube.com/channel/UC-EOsTo2l2x39e4JmSaWNRQ/playlists
+https://www.youtube.com/watch?v=dr10Z-HpsCQ&list=PL8GlT7H3xOcKBEDLXwJPE1jwZ_Z4oh6Rk
+https://www.youtube.com/watch?v=KfTH2d-JZ6k&list=PL8GlT7H3xOcJbXNVnM6lTT3Fec8dikotY
+
+https://docs.cypress.io/guides/overview/why-cypress.html#
+https://github.com/cypress-io
+https://github.com/cypress-io/cypress-tutorial-build-todo-starter
+https://github.com/cypress-io/cypress-tutorial-build-todo
+
+https://www.cypress.io/
+https://example.cypress.io/	<< Contains all the cypress commands, very useful
+
+
+Cypress creator: Brian Mann
+
+Selenium (webdriver): Testing tool built on top of selenium: Protractor, Nightwatch, DriverIO, etc.
+
+Cypress use the following underneath:
+- Mocha (gives you the it, describe, beforeEach methods)
+- Chai (for assertion, http://www.chaijs.com/, http://www.chaijs.com/guide/styles/#assert)
+
+	assert.typeOf(foo, 'string'); // without optional message
+	assert.typeOf(foo, 'string', 'foo is a string'); // with optional message
+	assert.equal(foo, 'bar', 'foo equal `bar`');
+	assert.lengthOf(foo, 3, 'foo`s value has a length of 3');
+	assert.lengthOf(beverages.tea, 3, 'beverages has 3 types of tea');
+	expect(foo).to.be.a('string');
+	expect(foo).to.equal('bar');
+	expect(foo).to.have.lengthOf(3);
+	expect(beverages).to.have.property('tea').with.lengthOf(3);
+	foo.should.be.a('string');
+	foo.should.equal('bar');
+	foo.should.have.lengthOf(3);
+	beverages.should.have.property('tea').with.lengthOf(3);
+	Differences
+
+-----------
+tutorial clips listening order:
+1. Project Setup
+2. Text Inputs
+3. Form submission and XHRs
+4. Loading Data with Fixtures
+5. To Do Item Behavior
+6. Toggling + Debugging
+7. Filters + Data Driven Tests
+8. Full end to end tests part 1
+9. Full end to end tests part 2
+
+
+C:\react\cypress-tutorial-build-todo-starter-master>npm install
+C:\react\cypress-tutorial-build-todo-starter-master>npm run dev
+localhost:3030
+
+(open in another terminal)
+C:\react\cypress-tutorial-build-todo-starter-master>npm run cypress	>> Create cypress folder
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
