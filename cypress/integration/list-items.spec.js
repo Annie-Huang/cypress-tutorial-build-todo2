@@ -30,6 +30,11 @@ describe('List items', () => {
         cy.get('.todo-list li')
             .as('list');
 
+        // The .invoke is for trigger the
+        // .todo-list li:hover .destroy {
+        //         display: block;
+        // }
+        // in styles.css
         cy.get('@list')
             .first()
             .find('.destroy')
@@ -48,6 +53,8 @@ describe('List items', () => {
                 // Important: remember to use `` when you deal with ${target.id}, otherwise it will not work and it's hard to find out why...
                 const target = Cypress._.head(todos);
                 // console.log('target=', target);
+
+                // Can skip adding status: 200 as that is the default value for status.
                 cy.route(
                     'PUT',
                     `/api/todos/${target.id}`,
@@ -63,6 +70,8 @@ describe('List items', () => {
             .find('.toggle')
             .click()
             .should('be.checked');
+        // I actually don't see any html value change on the checkbox when it's click, the value is always === on.
+        // Even though I know it got the logic of checked={props.isComplete}.
 
         cy.get('@first-todo')
             .should('have.class', 'completed');

@@ -48,6 +48,7 @@ export default class TodoApp extends Component {
                 //     ...this.state.todos.slice(targetIndex + 1)
                 // ];
 
+                // The following is much more clean than the above one...
                 const todos = this.state.todos.map(
                     t => t.id === data.id ? data : t
                 );
