@@ -1,4 +1,5 @@
 describe('Smoke tests', () => {
+    // Clear the DB each time a test is run.
     beforeEach(() => {
         cy.request('GET', '/api/todos')
             .its('body')
@@ -24,6 +25,7 @@ describe('Smoke tests', () => {
                         .type(todo.text)
                         .type('{enter}');
 
+                    // This tells cypress to wait until the response comes back before moving on.
                     cy.wait('@create');
 
                     cy.get('.todo-list li')
@@ -49,6 +51,7 @@ describe('Smoke tests', () => {
 
         it('Deletes todos', () => {
             cy.server();
+            // You can use the wild card, you don't need to put the id into the delete url
             cy.route('DELETE', '/api/todos/*')
                 .as('delete');
 

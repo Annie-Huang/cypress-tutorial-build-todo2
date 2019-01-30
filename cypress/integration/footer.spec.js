@@ -24,6 +24,7 @@ describe('Footer', () => {
                 {link: 'All', expectedLength: 4},
             ];
 
+            // How to loop through an array.
             cy.wrap(filters)
                 .each(filter => {
                     cy.contains(filter.link)
